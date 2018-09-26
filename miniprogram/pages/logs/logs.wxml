@@ -1,0 +1,27 @@
+<view class='weui-cell-third'>
+  <view class="page__title">
+    <image class='page-image' src="/images/1.jpg" />
+    <view class='weui-cell-event'> 亲友记事</view>
+  </view>
+  <block wx:for="{{queryResult}}" wx:key="*this">
+    <view class='weui-cell-list'>
+
+      <view class='weui-cell-circle'></view>
+
+      <view class='weui-cell-line'>
+
+        <view class='weui-cell-time'>{{item.time}}</view>
+        <view class='weui-cell-name'>{{item.title}}</view>
+        <view class='weui-cell-event'>{{item.event}}</view>
+      </view>
+
+    </view>
+
+  </block>
+  <view class="weui-footer">
+    <view class="weui-footer__links">
+      <navigator url="../index/index" class="weui-footer__link">首页</navigator>
+    </view>
+    <view class="weui-footer__text">微信：15871352105</view>
+  </view>
+</view>
